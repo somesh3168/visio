@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VISION Eye Care Clinic</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="bg-dark text-white">
+  <div class="container d-flex align-items-center justify-content-between py-2">
+
+    <!-- Right Section: Social Media & Contact Icons -->
+    <div class="d-flex align-items-center">
+      <!-- Only visible on wider screens -->
+      <div class="d-none d-lg-flex align-items-center me-4">
+        <i class="bi bi-geo-alt-fill me-2"></i>
+        <span class="me-4">Bhopal, India</span>
+
+        <i class="bi bi-envelope-fill me-2"></i>
+        <a href="mailto:contact@eyecareclinic.com" class="text-white text-decoration-none me-4">contact@eyecareclinic.com</a>
+
+        <i class="bi bi-telephone-fill me-2"></i>
+        <a href="tel:+1234567890" class="text-white text-decoration-none me-3">+1 (234) 567-890</a>
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+      </div>
+  </div>
+
+  <!-- Mobile View (Only Social Icons and Contact Info) -->
+  <div class="container d-lg-none d-flex justify-content-between py-2">
+    <div class="d-flex">
+      <a href="tel:+1234567890" class="text-white text-decoration-none me-3">
+        <i class="bi bi-telephone-fill"></i>
+      </a>
+      <a href="mailto:contact@eyecareclinic.com" class="text-white text-decoration-none me-3">
+        <i class="bi bi-envelope-fill"></i>
+      </a>
+      <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="
+position: sticky;
+top: 0;
+overflow: hidden; z-index: 1;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">👁️ VISION Eye Care</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/#treatments">Treatments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/#location">Location</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/store">Store</a>
+        </li>
+    </div>
+  </div>
+</nav>
+  <main>
+    <div class="hero-image" id="home">
+    <img src="/assets/images/eye-clinic-banner.jpg" alt="Eye Care Clinic" />
+    <!-- Call to Action Button -->
+  <div class="hero-overlay d-flex justify-content-center align-items-center button-container">
+  <!-- <span>We Provide<strong> BEST VISION CARE</strong></span> -->
+    <a href="#" class="button button-wiggle cta-button" data-bs-toggle="modal" data-bs-target="#googleFormModal">Book Appointment</a>
+    <!-- <a href="#" class="button button-wiggle">Book Appointment</a> -->
+  </div>
+  </div>
+
+<!-- <style>
+    .button-enquire-now {
+    color: #004d4d;
+    border: 2px solid #004d4d;
+    border-radius: 10px;
+    padding: 2px;
+    background: antiquewhite;
+
+}
+</style>
+
+<section id="treatments">
+    <h2>Our Eye Treatments</h2>
+    <div class="treatment-container">
+        <div class="treatment-item">
+            <img src="/assets/images/lasik.jpg" alt="Lasik Surgery">
+            <p>Advanced LASIK surgery for vision correction.</p>
+            <button type="button" class="button-enquire-now">enquire now</button>
+        </div>
+        <div class="treatment-item">
+            <img src="/assets/images/cataract.jpg" alt="Cataract Treatment">
+            <p>Comprehensive cataract treatment options.</p>
+            <button type="button" class="button-enquire-now">enquire now</button>
+        </div>
+        <div class="treatment-item">
+            <img src="/assets/images/glaucoma.jpg" alt="Glaucoma Care">
+            <p>Early detection and treatment of glaucoma.</p>
+            <button type="button" class="button-enquire-now">enquire now</button>
+        </div>
+        
+        <div class="treatment-item">
+            <img src="/assets/images/cornea.jpg" alt="Cornea Treatment">
+            <p>Early detection and treatment of cornea.</p>
+            <button type="button" class="button-enquire-now">enquire now</button>
+        </div>
+        <div class="treatment-item">
+            <img src="/assets/images/retina.jpg" alt="Retina Treatment">
+            <p>Early detection and treatment of retina.</p>
+            <button type="button" class="button-enquire-now">enquire now</button>
+        </div>
+
+        <div class="treatment-item">
+            <img src="/assets/images/refractive.jpg" alt="refractive Surgery">
+            <p>Refractive Eye surgery imporves the refractive stare of the eye.</p>
+            <button type="button" class="button-enquire-now">enquire now</button>
+        </div>
+    </div>
+</section> -->
+<!-- Treatment Section -->
+<section class="treatment-section py-5" id="treatments">
+    <div class="container">
+      <div class="row g-4">
+        
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="/assets/images/lasik.jpg" alt="Lasik Surgery" />
+            </div>
+            <div class="treatment-content">
+              <h5>LASIK Surgery</h5>
+              <p>Advanced LASIK surgery for precise vision correction.</p>
+              <button type="button" class="button-enquire-now">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="/assets/images/cataract.jpg" alt="Cataract Treatment" />
+            </div>
+            <div class="treatment-content">
+              <h5>Cataract Treatment</h5>
+              <p>Comprehensive and advanced cataract solutions.</p>
+              <button type="button" class="button-enquire-now">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="/assets/images/glaucoma.jpg" alt="Glaucoma Treatment" />
+            </div>
+            <div class="treatment-content">
+              <h5>Glaucoma Care</h5>
+              <p>Effective treatments to manage glaucoma and preserve vision.</p>
+              <button type="button" class="button-enquire-now">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="/assets/images/retina.jpg" alt="Retina Care" />
+            </div>
+            <div class="treatment-content">
+              <h5>Retina Services</h5>
+              <p>Specialized retina care for various retinal conditions.</p>
+              <button type="button" class="button-enquire-now">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="/assets/images/pediatric.jpg" alt="Pediatric Eye Care" />
+            </div>
+            <div class="treatment-content">
+              <h5>Pediatric Eye Care</h5>
+              <p>Eye care services dedicated to children's vision health.</p>
+              <button type="button" class="button-enquire-now">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="/assets/images/cornea.jpg" alt="Cornea Treatment" />
+            </div>
+            <div class="treatment-content">
+              <h5>Cornea Treatment</h5>
+              <p>Advanced corneal treatments to restore clear vision.</p>
+              <button type="button" class="button-enquire-now">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="/assets/images/dry-eye.jpg" alt="Dry Eye Treatment" />
+            </div>
+            <div class="treatment-content">
+              <h5>Dry Eye Treatment</h5>
+              <p>Comprehensive care for dry eye syndrome relief.</p>
+              <button type="button" class="button-enquire-now">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="/assets/images/contact-lens.jpg" alt="Contact Lens Services" />
+            </div>
+            <div class="treatment-content">
+              <h5>Contact Lens Services</h5>
+              <p>Wide range of contact lenses for all vision needs.</p>
+              <button type="button" class="button-enquire-now">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="/assets/images/diabetic-eye.jpg" alt="Diabetic Eye Care" />
+            </div>
+            <div class="treatment-content">
+              <h5>Diabetic Eye Care</h5>
+              <p>Specialized care for diabetic eye conditions.</p>
+              <button type="button" class="button-enquire-now">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="/assets/images/eye-infection.jpg" alt="Eye Infection" />
+            </div>
+            <div class="treatment-content">
+              <h5>Eye Infection Treatment</h5>
+              <p>Quick and effective treatments for eye infections.</p>
+              <button type="button" class="button-enquire-now">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+<p><!-- CSS Styles (add in your CSS file or within a <style> tag) --></p>
+<style>
+  /* Treatment Section */
+  .treatment-section {
+    background-color: #f8f9fa;
+  }
+  
+  .treatment-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .treatment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .treatment-image {
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .treatment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures all images have a uniform size */
+    transition: transform 0.3s ease;
+  }
+  
+  .treatment-card:hover .treatment-image img {
+    transform: scale(1.05);
+  }
+  
+  .treatment-content {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .treatment-content h5 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #4a535c;
+  }
+  
+  .treatment-content p {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .button-enquire-now {
+    margin-top: 1rem;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-enquire-now:hover {
+    background-color: #218838;
+    cursor: pointer;
+  }
+  </style>
+
+<!-- <style>
+    .location-section {
+        background-color: #f8f9fa;
+    }
+
+    .location-section h2 {
+        font-size: 2rem;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    .map-container {
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+    }
+
+    .map-container iframe {
+        border: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+</style> -->
+<section id="location" class="location-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Location</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.5668014095754!2d77.42426691999793!3d23.180801721999963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43d6ff3dbf85%3A0x48c2d8ead0ef13bd!2sVISION%20Eye%20Care%20Clinic%20%26%20Opticals!5e0!3m2!1sen!2sin!4v1731149204148!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<style>
+
+/* Enhanced Contact Us Section */
+.contact-us {
+  background-color: #f3f4f6;
+  padding: 60px 0;
+}
+
+.contact-info {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h5 {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.contact-info a {
+  color: #555;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #007bff;
+}
+
+.phone-link {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.email-link {
+  font-size: 1.2rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons .social-icon {
+  font-size: 1.5rem;
+  margin: 0 15px;
+  color: #495057;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons .social-icon:hover {
+  color: #007bff;
+}
+
+.btn-primary {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+</style>
+
+<!-- Get in Touch Section -->
+<!-- Enhanced Get in Touch Section -->
+<section class="contact-us py-5" id="contact">
+  <div class="container">
+    <div class="section-title text-center mb-4">
+      <h2>Contact Us</h2>
+      <p>We are here to assist you with all your eye care needs</p>
+    </div>
+    <div class="row">
+      <!-- Phone Numbers -->
+      <div class="col-lg-4">
+        <div class="contact-info mb-4">
+          <h5><i class="fas fa-phone-volume"></i> Call Us</h5>
+          <ul class="list-unstyled">
+            
+            <li>
+              <strong>Reception:</strong> 
+              <a href="tel:+919876543210" class="phone-link">+91 98765 43210</a>
+            </li>
+            
+            <li>
+              <strong>Emergency:</strong> 
+              <a href="tel:+918765432109" class="phone-link">+91 87654 32109</a>
+            </li>
+            
+            <li>
+              <strong>Appointment:</strong> 
+              <a href="tel:+917654321098" class="phone-link">+91 76543 21098</a>
+            </li>
+            
+          </ul>
+          <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#googleFormModal">
+            Get a Call Back
+          </button>
+        </div>
+      </div>
+      <!-- Email Address -->
+      <div class="col-lg-4">
+        <div class="contact-info mb-4">
+          <h5><i class="fas fa-envelope"></i> Email Us</h5>
+          <a href="mailto:info@eyecareclinic.com" class="email-link">info@eyecareclinic.com</a>
+        </div>
+      </div>
+      <!-- Location -->
+      <div class="col-lg-4">
+        <div class="contact-info mb-4">
+          <h5><i class="fas fa-map-marker-alt"></i> Visit Us</h5>
+          <a href="https://www.google.com/maps?ll=23.180579,77.424561&amp;z=18&amp;t=m&amp;hl=en&amp;gl=IN&amp;mapclient=embed&amp;cid=5242991419251954621" target="_blank">
+            Shop no 46, Signature Residency, Near, JK Rd, Bhopal, MP 462042
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Social Media Links -->
+    <div class="row mt-4">
+      <div class="col text-center">
+        <h5>Follow Us</h5>
+        <div class="social-icons">
+          
+          <a href="https://www.facebook.com/eyecareclinic" target="_blank" class="social-icon" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          
+          <a href="https://twitter.com/eyecareclinic" target="_blank" class="social-icon" aria-label="Twitter">
+            <i class="bi bi-twitter"></i>
+          </a>
+          
+          <a href="https://www.instagram.com/eyecareclinic" target="_blank" class="social-icon" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          
+          <a href="https://www.linkedin.com/company/eyecareclinic" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- About Image -->
+        <div class="col-md-6">
+          <div class="about-image text-center">
+            <img src="/assets/images/clinic-team.jpg" alt="Eye Care Clinic Team" class="img-fluid rounded shadow" />
+          </div>
+        </div>
+        
+        <!-- About Content -->
+        <div class="col-md-6">
+          <h2 class="">About Us</h2>
+          <p class="lead">
+            At our Eye Care Clinic, we are committed to providing the highest level of eye care with compassion and expertise. 
+            Our team of experienced ophthalmologists and optometrists uses the latest technology to diagnose and treat a wide range of eye conditions.
+          </p>
+          <p>
+            We believe in delivering personalized care tailored to each patient's unique needs. From routine eye exams to advanced surgical procedures, 
+            we are dedicated to ensuring the best possible outcomes for your vision.
+          </p>
+        </div>
+      </div>
+          <a href="/#home" class="btn btn-primary mt-3" style="color: #004d4d;
+          border: 2px solid #004d4d;
+          border-radius: 10px;
+          padding: 2px;
+          background: antiquewhite;">Home</a>
+    </div>
+  </section>
+
+
+  </main>
+    <footer class="footer bg-dark text-white pt-4">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Logo and Description -->
+        <div class="col-md-4 mb-4">
+          <h5>VISION Eye Care Clinic</h5>
+          <p>Providing world-class eye care services to improve your vision and quality of life.</p>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="/#home" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="/#about" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="/#treatments" class="text-white text-decoration-none">Treatments</a></li>
+            <li><a href="/#contact" class="text-white text-decoration-none">Contact</a></li>
+            <li><a href="/store" class="text-white text-decoration-none">Store</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Sitemap</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="col-md-4 mb-4">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt"></i> Shop no 46, Signature Residency, Near, JK Rd, Bhopal, MP 462042</li>
+            <li><i class="bi bi-envelope"></i> contact@eyecareclinic.com</li>
+            <li><i class="bi bi-phone"></i> +1 (234) 567-8900</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="bg-secondary">
+      <!-- Social Media Links -->
+      <div class="text-center mb-3">
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center">
+        <p class="mb-0">&copy; 2024 VISION Eye Care Clinic. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <style>
+    .glass-effect {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+</style>
+
+  <!-- Modal Structure -->
+  <div class="modal fade" id="googleFormModal" tabindex="-1" aria-labelledby="googleFormModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content glass-effect">
+        <div class="modal-header">
+          <h5 class="modal-title" id="googleFormModalLabel">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Embed Google Form -->
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdlr_dcW60XLZkrWxbRW0dG167ESzlUxwqHyRJ1bQAKZfOiLQ/viewform?embedded=true"
+            width="100%"
+            height="500"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            style="border: 0;">
+            Loading…
+          </iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/scripts.js"></script>
+</html>

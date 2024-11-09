@@ -1,0 +1,95 @@
+<!-- Treatment Section -->
+<section class="treatment-section py-5" id="treatments">
+    <div class="container">
+      <div class="row g-4">
+        {% for treatment in site.data.treatments %}
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="{{ treatment.image | relative_url }}" alt="{{ treatment.alt }}">
+            </div>
+            <div class="treatment-content">
+              <h5>{{ treatment.name }}</h5>
+              <p>{{ treatment.description }}</p>
+              <button type="button" class="button-enquire-now">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  
+  <!-- CSS Styles (add in your CSS file or within a <style> tag) -->
+  <style>
+  /* Treatment Section */
+  .treatment-section {
+    background-color: #f8f9fa;
+  }
+  
+  .treatment-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .treatment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .treatment-image {
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .treatment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures all images have a uniform size */
+    transition: transform 0.3s ease;
+  }
+  
+  .treatment-card:hover .treatment-image img {
+    transform: scale(1.05);
+  }
+  
+  .treatment-content {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .treatment-content h5 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #4a535c;
+  }
+  
+  .treatment-content p {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .button-enquire-now {
+    margin-top: 1rem;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-enquire-now:hover {
+    background-color: #218838;
+    cursor: pointer;
+  }
+  </style>
+  

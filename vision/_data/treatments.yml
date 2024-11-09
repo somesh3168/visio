@@ -1,0 +1,49 @@
+- name: LASIK Surgery
+  image: "/assets/images/lasik.jpg"
+  description: "Advanced LASIK surgery for precise vision correction."
+  alt: "Lasik Surgery"
+
+- name: Cataract Treatment
+  image: "/assets/images/cataract.jpg"
+  description: "Comprehensive and advanced cataract solutions."
+  alt: "Cataract Treatment"
+
+- name: Glaucoma Care
+  image: "/assets/images/glaucoma.jpg"
+  description: "Effective treatments to manage glaucoma and preserve vision."
+  alt: "Glaucoma Treatment"
+
+- name: Retina Services
+  image: "/assets/images/retina.jpg"
+  description: "Specialized retina care for various retinal conditions."
+  alt: "Retina Care"
+
+- name: Pediatric Eye Care
+  image: "/assets/images/pediatric.jpg"
+  description: "Eye care services dedicated to children's vision health."
+  alt: "Pediatric Eye Care"
+
+- name: Cornea Treatment
+  image: "/assets/images/cornea.jpg"
+  description: "Advanced corneal treatments to restore clear vision."
+  alt: "Cornea Treatment"
+
+- name: Dry Eye Treatment
+  image: "/assets/images/dry-eye.jpg"
+  description: "Comprehensive care for dry eye syndrome relief."
+  alt: "Dry Eye Treatment"
+
+- name: Contact Lens Services
+  image: "/assets/images/contact-lens.jpg"
+  description: "Wide range of contact lenses for all vision needs."
+  alt: "Contact Lens Services"
+
+- name: Diabetic Eye Care
+  image: "/assets/images/diabetic-eye.jpg"
+  description: "Specialized care for diabetic eye conditions."
+  alt: "Diabetic Eye Care"
+
+- name: Eye Infection Treatment
+  image: "/assets/images/eye-infection.jpg"
+  description: "Quick and effective treatments for eye infections."
+  alt: "Eye Infection"

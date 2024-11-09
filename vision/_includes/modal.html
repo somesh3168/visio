@@ -1,0 +1,39 @@
+<style>
+    .glass-effect {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+</style>
+
+  <!-- Modal Structure -->
+  <div class="modal fade" id="googleFormModal" tabindex="-1" aria-labelledby="googleFormModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content glass-effect">
+        <div class="modal-header">
+          <h5 class="modal-title" id="googleFormModalLabel">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Embed Google Form -->
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdlr_dcW60XLZkrWxbRW0dG167ESzlUxwqHyRJ1bQAKZfOiLQ/viewform?embedded=true"
+            width="100%"
+            height="500"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            style="border: 0;">
+            Loading…
+          </iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

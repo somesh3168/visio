@@ -1,0 +1,137 @@
+
+<style>
+
+/* Enhanced Contact Us Section */
+.contact-us {
+  background-color: #f3f4f6;
+  padding: 60px 0;
+}
+
+.contact-info {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h5 {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.contact-info a {
+  color: #555;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #007bff;
+}
+
+.phone-link {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.email-link {
+  font-size: 1.2rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons .social-icon {
+  font-size: 1.5rem;
+  margin: 0 15px;
+  color: #495057;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons .social-icon:hover {
+  color: #007bff;
+}
+
+.btn-primary {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+</style>
+<!-- Get in Touch Section -->
+<!-- Enhanced Get in Touch Section -->
+<section class="contact-us py-5" id="contact">
+  <div class="container">
+    <div class="section-title text-center mb-4">
+      <h2>Contact Us</h2>
+      <p>We are here to assist you with all your eye care needs</p>
+    </div>
+    <div class="row">
+      <!-- Phone Numbers -->
+      <div class="col-lg-4">
+        <div class="contact-info mb-4">
+          <h5><i class="fas fa-phone-volume"></i> Call Us</h5>
+          <ul class="list-unstyled">
+            {% for phone in site.data.contacts.phones %}
+            <li>
+              <strong>{{ phone.label }}:</strong> 
+              <a href="{{ phone.link }}" class="phone-link">{{ phone.number }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+          <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#googleFormModal">
+            Get a Call Back
+          </button>
+        </div>
+      </div>
+      <!-- Email Address -->
+      <div class="col-lg-4">
+        <div class="contact-info mb-4">
+          <h5><i class="{{ site.data.contacts.emails[0].icon }}"></i> Email Us</h5>
+          <a href="{{ site.data.contacts.emails[0].link }}" class="email-link">{{ site.data.contacts.emails[0].address }}</a>
+        </div>
+      </div>
+      <!-- Location -->
+      <div class="col-lg-4">
+        <div class="contact-info mb-4">
+          <h5><i class="{{ site.data.contacts.location.icon }}"></i> Visit Us</h5>
+          <a href="{{ site.data.contacts.location.link }}" target="_blank">
+            {{ site.data.contacts.location.address }}
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Social Media Links -->
+    <div class="row mt-4">
+      <div class="col text-center">
+        <h5>Follow Us</h5>
+        <div class="social-icons">
+          {% for social in site.data.contacts.social %}
+          <a href="{{ social.link }}" target="_blank" class="social-icon" aria-label="{{ social.name }}">
+            <i class="{{ social.icon }}"></i>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  

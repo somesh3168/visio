@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <!-- Navbar with Expandable Menu -->
+  <header class="header">
+    <div class="container">
+      <!-- Logo/Icon -->
+      <a href="#home" class="logo">👁️ EyeCare</a>
+
+      <!-- Expandable Menu Icon for Mobile -->
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <!-- Navbar Links -->
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#treatments">Treatments</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    $(document).ready(function(){
+      $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: $($(this).attr('href')).offset().top
+        }, 500, 'linear');
+      });
+
+      // Toggle Menu for Mobile
+      $('#mobile-menu').on('click', function() {
+        $(this).toggleClass('is-active');
+        $('#navbar').toggleClass('active');
+      });
+    });
+  </script>
+
+  <!-- Hero Image Section -->
+  <div class="hero-image">
+    <img src="{{ '/assets/images/eye-clinic-banner.jpg' | relative_url }}" alt="Eye Care Clinic">
+  </div>
+
+  <!-- Treatments Section -->
+  <section id="treatments">
+    <h2>Our Eye Treatments</h2>
+    <div class="treatment-container">
+      <div class="treatment-item">
+        <img src="{{ '/assets/images/lasik.jpg' | relative_url }}" alt="Lasik Surgery">
+        <p>Advanced LASIK surgery for vision correction.</p>
+      </div>
+      <div class="treatment-item">
+        <img src="{{ '/assets/images/cataract.jpg' | relative_url }}" alt="Cataract Treatment">
+        <p>Comprehensive cataract treatment options.</p>
+      </div>
+      <div class="treatment-item">
+        <img src="{{ '/assets/images/glaucoma.jpg' | relative_url }}" alt="Glaucoma Care">
+        <p>Early detection and treatment of glaucoma.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; {{ site.title }} | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+emails:
+  - address: "info@eyecareclinic.com"
+    icon: "fas fa-envelope"
+    link: "mailto:info@eyecareclinic.com"
+
+phones:
+  - label: "Reception"
+    number: "+91 98765 43210"
+    icon: "fas fa-phone"
+    link: "tel:+919876543210"
+  - label: "Emergency"
+    number: "+91 87654 32109"
+    icon: "fas fa-phone-alt"
+    link: "tel:+918765432109"
+  - label: "Appointment"
+    number: "+91 76543 21098"
+    icon: "fas fa-phone-square"
+    link: "tel:+917654321098"
+
+location:
+  address: "Shop no 46, Signature Residency, Near, JK Rd, Bhopal, MP 462042"
+  icon: "fas fa-map-marker-alt"
+  link: "https://www.google.com/maps?ll=23.180579,77.424561&z=18&t=m&hl=en&gl=IN&mapclient=embed&cid=5242991419251954621"
+
+social:
+  - name: "Facebook"
+    icon: "bi bi-facebook"
+    link: "https://www.facebook.com/eyecareclinic"
+  - name: "Twitter"
+    icon: "bi bi-twitter"
+    link: "https://twitter.com/eyecareclinic"
+  - name: "Instagram"
+    icon: "bi bi-instagram"
+    link: "https://www.instagram.com/eyecareclinic"
+  - name: "LinkedIn"
+    icon: "bi bi-linkedin"
+    link: "https://www.linkedin.com/company/eyecareclinic"

@@ -1,0 +1,83 @@
+- name: "Stylish Eye Specs"
+  description: "Modern frames designed for comfort and style. Available in various colors."
+  image: "specs1.jpg"
+  
+- name: "Classic Rimless Glasses"
+  description: "Elegant rimless design for a timeless look. Lightweight and durable."
+  image: "specs2.jpg"
+
+- name: "Blue Light Blocking Glasses"
+  description: "Protect your eyes from screen glare with these stylish blue light glasses."
+  image: "specs3.jpg"
+  
+- name: "Sporty Prescription Glasses"
+  description: "Ideal for active individuals needing durable and stylish eyewear."
+  image: "specs4.jpg"
+  
+- name: "Vintage Round Glasses"
+  description: "Bring back the retro vibe with these classic round frames."
+  image: "specs5.jpg"
+
+- name: "Polarized Sunglasses"
+  description: "Reduce glare and protect your eyes with polarized lenses."
+  image: "specs6.jpg"
+
+- name: "Aviator Glasses"
+  description: "Timeless aviator frames with a modern twist. Perfect for all-day wear."
+  image: "specs7.jpg"
+
+- name: "Cat Eye Glasses"
+  description: "Add a touch of glamour with our trendy cat eye glasses."
+  image: "specs8.jpg"
+
+- name: "Kids’ Anti-Glare Glasses"
+  description: "Lightweight frames designed for kids, offering UV protection."
+  image: "specs9.jpg"
+
+- name: "Oversized Fashion Glasses"
+  description: "Make a bold statement with oversized, chic frames."
+  image: "specs10.jpg"
+
+- name: "Computer Vision Glasses"
+  description: "Specially designed to reduce digital eye strain during screen time."
+  image: "specs11.jpg"
+
+- name: "Bifocal Reading Glasses"
+  description: "Enjoy clear vision with bifocal lenses, perfect for reading."
+  image: "specs12.jpg"
+
+- name: "Gradient Lens Sunglasses"
+  description: "Stylish gradient lenses that offer both fashion and function."
+  image: "specs13.jpg"
+
+- name: "Rectangle Frame Glasses"
+  description: "Minimalist rectangle frames for a sleek, modern look."
+  image: "specs14.jpg"
+
+- name: "Prescription Safety Glasses"
+  description: "Protective eyewear with prescription lenses, ideal for workplaces."
+  image: "specs15.jpg"
+
+- name: "Mirrored Aviators"
+  description: "Reflective lenses with classic aviator styling, perfect for sunny days."
+  image: "specs16.jpg"
+
+- name: "Flexible Sports Glasses"
+  description: "Durable and flexible frames designed for active sports enthusiasts."
+  image: "specs17.jpg"
+
+- name: "Transition Lenses"
+  description: "Adaptive lenses that automatically adjust to changing light."
+  image: "specs18.jpg"
+
+- name: "Eco-Friendly Bamboo Glasses"
+  description: "Sustainable bamboo frames for an eco-conscious choice."
+  image: "specs19.jpg"
+
+- name: "Photochromic Glasses"
+  description: "Lenses that darken in sunlight and clear up indoors."
+  image: "specs20.jpg"
+
+- name: "Luxury Designer Glasses"
+  description: "Exclusive designer frames for a high-end look."
+  image: "specs21.jpg"

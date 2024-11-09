@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="bg-dark text-white">
+  <div class="container d-flex align-items-center justify-content-between py-2">
+
+    <!-- Right Section: Social Media & Contact Icons -->
+    <div class="d-flex align-items-center">
+      <!-- Only visible on wider screens -->
+      <div class="d-none d-lg-flex align-items-center me-4">
+        <i class="bi bi-geo-alt-fill me-2"></i>
+        <span class="me-4">Bhopal, India</span>
+
+        <i class="bi bi-envelope-fill me-2"></i>
+        <a href="mailto:contact@eyecareclinic.com" class="text-white text-decoration-none me-4">contact@eyecareclinic.com</a>
+
+        <i class="bi bi-telephone-fill me-2"></i>
+        <a href="tel:+1234567890" class="text-white text-decoration-none me-3">+1 (234) 567-890</a>
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+      </div>
+  </div>
+
+  <!-- Mobile View (Only Social Icons and Contact Info) -->
+  <div class="container d-lg-none d-flex justify-content-between py-2">
+    <div class="d-flex">
+      <a href="tel:+1234567890" class="text-white text-decoration-none me-3">
+        <i class="bi bi-telephone-fill"></i>
+      </a>
+      <a href="mailto:contact@eyecareclinic.com" class="text-white text-decoration-none me-3">
+        <i class="bi bi-envelope-fill"></i>
+      </a>
+      <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="
+position: sticky;
+top: 0;
+overflow: hidden; z-index: 1;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">👁️ VISION Eye Care</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/#treatments">Treatments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/#location">Location</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/store">Store</a>
+        </li>
+    </div>
+  </div>
+</nav>
+  <main>
+    <section id="store" class="store-section py-5">
+  <div class="container">
+    <h2 class="text-center text-primary mb-5">Our Collection</h2>
+
+    <!-- Search Bar -->
+    <div class="row mb-4 justify-content-center">
+      <div class="col-md-6">
+        <input type="text" id="search" class="form-control" placeholder="Search products..." onkeyup="filterProducts()" />
+      </div>
+    </div>
+
+    <div class="row gy-4" id="product-list">
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="stylish eye specs">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs1.jpg" class="card-img-top" alt="Stylish Eye Specs"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Stylish Eye Specs" />
+          <div class="card-body">
+            <h5 class="card-title">Stylish Eye Specs</h5>
+            <p class="card-text">Modern frames designed for comfort and style. Available in various colors.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="classic rimless glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs2.jpg" class="card-img-top" alt="Classic Rimless Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Classic Rimless Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Classic Rimless Glasses</h5>
+            <p class="card-text">Elegant rimless design for a timeless look. Lightweight and durable.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="blue light blocking glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs3.jpg" class="card-img-top" alt="Blue Light Blocking Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Blue Light Blocking Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Blue Light Blocking Glasses</h5>
+            <p class="card-text">Protect your eyes from screen glare with these stylish blue light glasses.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="sporty prescription glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs4.jpg" class="card-img-top" alt="Sporty Prescription Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Sporty Prescription Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Sporty Prescription Glasses</h5>
+            <p class="card-text">Ideal for active individuals needing durable and stylish eyewear.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="vintage round glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs5.jpg" class="card-img-top" alt="Vintage Round Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Vintage Round Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Vintage Round Glasses</h5>
+            <p class="card-text">Bring back the retro vibe with these classic round frames.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="polarized sunglasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs6.jpg" class="card-img-top" alt="Polarized Sunglasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Polarized Sunglasses" />
+          <div class="card-body">
+            <h5 class="card-title">Polarized Sunglasses</h5>
+            <p class="card-text">Reduce glare and protect your eyes with polarized lenses.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="aviator glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs7.jpg" class="card-img-top" alt="Aviator Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Aviator Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Aviator Glasses</h5>
+            <p class="card-text">Timeless aviator frames with a modern twist. Perfect for all-day wear.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="cat eye glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs8.jpg" class="card-img-top" alt="Cat Eye Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Cat Eye Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Cat Eye Glasses</h5>
+            <p class="card-text">Add a touch of glamour with our trendy cat eye glasses.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="kids’ anti-glare glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs9.jpg" class="card-img-top" alt="Kids’ Anti-Glare Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Kids’ Anti-Glare Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Kids’ Anti-Glare Glasses</h5>
+            <p class="card-text">Lightweight frames designed for kids, offering UV protection.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="oversized fashion glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs10.jpg" class="card-img-top" alt="Oversized Fashion Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Oversized Fashion Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Oversized Fashion Glasses</h5>
+            <p class="card-text">Make a bold statement with oversized, chic frames.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="computer vision glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs11.jpg" class="card-img-top" alt="Computer Vision Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Computer Vision Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Computer Vision Glasses</h5>
+            <p class="card-text">Specially designed to reduce digital eye strain during screen time.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="bifocal reading glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs12.jpg" class="card-img-top" alt="Bifocal Reading Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Bifocal Reading Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Bifocal Reading Glasses</h5>
+            <p class="card-text">Enjoy clear vision with bifocal lenses, perfect for reading.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="gradient lens sunglasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs13.jpg" class="card-img-top" alt="Gradient Lens Sunglasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Gradient Lens Sunglasses" />
+          <div class="card-body">
+            <h5 class="card-title">Gradient Lens Sunglasses</h5>
+            <p class="card-text">Stylish gradient lenses that offer both fashion and function.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="rectangle frame glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs14.jpg" class="card-img-top" alt="Rectangle Frame Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Rectangle Frame Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Rectangle Frame Glasses</h5>
+            <p class="card-text">Minimalist rectangle frames for a sleek, modern look.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="prescription safety glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs15.jpg" class="card-img-top" alt="Prescription Safety Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Prescription Safety Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Prescription Safety Glasses</h5>
+            <p class="card-text">Protective eyewear with prescription lenses, ideal for workplaces.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="mirrored aviators">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs16.jpg" class="card-img-top" alt="Mirrored Aviators"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Mirrored Aviators" />
+          <div class="card-body">
+            <h5 class="card-title">Mirrored Aviators</h5>
+            <p class="card-text">Reflective lenses with classic aviator styling, perfect for sunny days.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="flexible sports glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs17.jpg" class="card-img-top" alt="Flexible Sports Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Flexible Sports Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Flexible Sports Glasses</h5>
+            <p class="card-text">Durable and flexible frames designed for active sports enthusiasts.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="transition lenses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs18.jpg" class="card-img-top" alt="Transition Lenses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Transition Lenses" />
+          <div class="card-body">
+            <h5 class="card-title">Transition Lenses</h5>
+            <p class="card-text">Adaptive lenses that automatically adjust to changing light.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="eco-friendly bamboo glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs19.jpg" class="card-img-top" alt="Eco-Friendly Bamboo Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Eco-Friendly Bamboo Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Eco-Friendly Bamboo Glasses</h5>
+            <p class="card-text">Sustainable bamboo frames for an eco-conscious choice.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="photochromic glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs20.jpg" class="card-img-top" alt="Photochromic Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Photochromic Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Photochromic Glasses</h5>
+            <p class="card-text">Lenses that darken in sunlight and clear up indoors.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 product-card" data-name="luxury designer glasses">
+        <div class="card h-100 shadow-sm">
+          <!-- <img src="/assets/images/specs21.jpg" class="card-img-top" alt="Luxury Designer Glasses"> -->
+          <img src="https://picsum.photos/200" class="card-img-top" alt="Luxury Designer Glasses" />
+          <div class="card-body">
+            <h5 class="card-title">Luxury Designer Glasses</h5>
+            <p class="card-text">Exclusive designer frames for a high-end look.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<script>
+// JavaScript for Product Search
+function filterProducts() {
+  const query = document.getElementById('search').value.toLowerCase();
+  const products = document.querySelectorAll('.product-card');
+  
+  products.forEach(product => {
+    const name = product.getAttribute('data-name');
+    if (name.includes(query)) {
+      product.style.display = 'block';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+}
+</script>
+
+
+  </main>
+    <footer class="footer bg-dark text-white pt-4">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Logo and Description -->
+        <div class="col-md-4 mb-4">
+          <h5>Store</h5>
+          <p>Providing world-class eye care services to improve your vision and quality of life.</p>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="/#home" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="/#about" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="/#treatments" class="text-white text-decoration-none">Treatments</a></li>
+            <li><a href="/#contact" class="text-white text-decoration-none">Contact</a></li>
+            <li><a href="/store" class="text-white text-decoration-none">Store</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Sitemap</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="col-md-4 mb-4">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt"></i> Shop no 46, Signature Residency, Near, JK Rd, Bhopal, MP 462042</li>
+            <li><i class="bi bi-envelope"></i> contact@eyecareclinic.com</li>
+            <li><i class="bi bi-phone"></i> +1 (234) 567-8900</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="bg-secondary">
+      <!-- Social Media Links -->
+      <div class="text-center mb-3">
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center">
+        <p class="mb-0">&copy; 2024 VISION Eye Care Clinic. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <style>
+    .glass-effect {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+</style>
+
+  <!-- Modal Structure -->
+  <div class="modal fade" id="googleFormModal" tabindex="-1" aria-labelledby="googleFormModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content glass-effect">
+        <div class="modal-header">
+          <h5 class="modal-title" id="googleFormModalLabel">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Embed Google Form -->
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdlr_dcW60XLZkrWxbRW0dG167ESzlUxwqHyRJ1bQAKZfOiLQ/viewform?embedded=true"
+            width="100%"
+            height="500"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            style="border: 0;">
+            Loading…
+          </iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/scripts.js"></script>
+</html>
